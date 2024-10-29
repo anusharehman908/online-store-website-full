@@ -1,0 +1,32 @@
+.product-page {
+    padding: 20px;
+  }
+  
+  .header-slider {
+    margin-bottom: 20px;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto; /* Adjust as needed */
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

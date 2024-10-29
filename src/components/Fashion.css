@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100vw; /* Set viewport width to 100% */
+  box-sizing: border-box;
+}
+
+/* Header Slider */
+.header-slider {
+  margin: 20px 0;
+}
+
+.header-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the slider images */
+}
+
+/* Fashion Collection Title */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #333; /* Darker text color */
+}
+
+/* Products Container */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align products */
+  padding: 10px;
+  max-width: 100vw; /* Prevents overflow */
+  box-sizing: border-box; /* Ensure padding doesn't add to width */
+}
+
+/* Individual Product Card */
+.product-card {
+  background: #fff; /* White background for product card */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  margin: 10px;
+  padding: 15px;
+  width: calc(25% - 20px); /* Four cards in a row with gap */
+  text-align: center;
+  transition: box-shadow 0.3s; /* Transition for hover effect */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.product-card img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for product images */
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333; /* Darker text for product names */
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  color: #777; /* Gray color for prices */
+}
+
+/* Button Styles */
+.product-card button {
+  padding: 10px 15px;
+  background-color: #28a745; /* Green background for buttons */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.product-card button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(33.33% - 20px); /* Three cards in a row */
+  }
+}
+
+@media (max-width: 800px) {
+  .product-card {
+    width: calc(50% - 20px); /* Two cards in a row */
+  }
+}
+
+@media (max-width: 786px) {
+  .product-card {
+    width: calc(100% - 10px); /* One card in a row */
+    margin: 5px; /* Reduce margin to fit within mobile view */
+  }
+
+  /* Adjust padding and margin to prevent any potential overflow on mobile */
+  .products {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 100vw; /* Ensure no overflow on mobile */
+    box-sizing: border-box;
+  }
+}

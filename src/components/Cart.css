@@ -1,0 +1,106 @@
+/* Cart.css */
+
+.cart-container {
+  padding: 20px;
+  max-width: 800px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the container */
+  font-family: Arial, sans-serif; /* Font styling */
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.cart-card {
+  display: flex;
+  align-items: center; /* Center align items */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border around each cart item */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between items */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.cart-image {
+  width: 100px; /* Fixed image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between image and details */
+}
+
+.cart-details {
+  flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+.cart-quantity-controls {
+  display: flex;
+  align-items: center; /* Center align buttons and quantity */
+}
+
+.cart-quantity-controls button {
+  width: 30px; /* Fixed button width */
+  height: 30px; /* Fixed button height */
+  font-size: 18px; /* Font size for buttons */
+}
+
+.remove-button {
+  width:30%;
+  margin-left: 10px; /* Space between quantity controls and remove button */
+  background-color: #dc3545; /* Red background for remove button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.buy-now-button {
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  margin-top: 20px; /* Space above button */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width */
+}
+
+.buy-now-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .cart-card {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .cart-image {
+    width: 80px; /* Smaller image on mobile */
+  }
+
+  .cart-details {
+    margin-bottom: 10px; /* Space below details on small screens */
+  }
+
+  .cart-quantity-controls {
+    margin-bottom: 10px; /* Space below quantity controls on mobile */
+  }
+
+  .remove-button {
+    width: 100%; /* Full width for better touch target */
+    padding: 10px; /* Increase padding for a larger button */
+    margin-top: 5px; /* Space above the button */
+    font-size: 16px; /* Increase font size on mobile */
+  }
+
+  .buy-now-button {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+}

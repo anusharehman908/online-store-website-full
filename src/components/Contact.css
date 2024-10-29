@@ -1,0 +1,91 @@
+.contact-form {
+margin-top: 900px;
+  max-width: 600px; /* Set a max-width for the form */
+  margin: auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid #fb1010;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group input[type="number"] {
+  /* Add styles specifically for number input */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for comfort */
+  border: 1px solid #f96d11; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.contact-form h2 {
+  text-align: center; /* Center the heading */
+  color: #f0390b; /* Darker color for the heading */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Make labels bold */
+  color: #555; /* Darker color for labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width for inputs and textareas */
+  padding: 10px; /* Padding for comfort */
+  border: 1px solid #ef0000; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.form-group input[type="radio"] {
+  width: auto; /* Auto width for radio buttons */
+  margin-right: 5px; /* Space to the right */
+}
+
+button {
+  background-color: #fa6e03; /* Green background color */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size */
+  width: 100%; /* Full width button */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.confirmation-message {
+  margin-top: 15px; /* Space above the message */
+  padding: 10px;
+  border: 1px solid #4CAF50; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #e7f9e7; /* Light green background */
+  color: #4CAF50; /* Darker green text */
+  text-align: center; /* Center the message */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px; /* Reduced padding on smaller screens */
+  }
+
+  button {
+    padding: 12px 10px; /* Adjust button padding */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Slightly smaller font on mobile */
+  }
+}

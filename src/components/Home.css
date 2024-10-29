@@ -1,0 +1,74 @@
+/* Main container for each collection */
+.collection-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/* Styling individual product items */
+.product-card {
+  flex: 1 1 45%; /* Adjusted to display two cards per row on larger screens */
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  height: 320px; /* Fixed height for consistent layout */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #fa3e18;
+}
+
+/* Styling product image */
+.product-card img {
+  width: 100%;
+  height: 90px; /* Fixed height for images */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Product name and price styling */
+.product-card .name-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.product-card .name {
+  font-size: 2px;
+  color: orange !important; /* Ensure orange color stays */
+  flex: 1;
+  text-align: left;
+  white-space: nowrap; /* Keep text on a single line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card:hover .name {
+  color: orange !important; /* Ensures the color remains orange on hover */
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: rgb(244, 117, 13);
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

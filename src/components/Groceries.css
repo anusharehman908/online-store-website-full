@@ -1,0 +1,106 @@
+.groceries-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box; /* Include padding and borders in element's total width */
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  position: fixed; /* Fixed position for header */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Background color for header */
+  z-index: 1000; /* Ensure header is on top */
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  margin: 80px 0 20px; /* Add margin to avoid overlap with fixed header */
+  overflow: hidden; /* Prevent slider from overflowing */
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* See More Button Hover Effect */
+.see-more:hover {
+  background-color: #1e88e5;
+}
+
+/* General Styles for Products Container */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow in the products container */
+}
+
+/* Product Card Styles */
+.product-card {
+  flex: 1 1 auto;
+  margin: 10px;
+  box-sizing: border-box; /* Ensure padding/margin do not affect width */
+ 
+
+
+  width: 250px; 
+  
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(33.33% - 20px); /* Adjust for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* Adjust for tablets */
+  }
+
+  .slider-image {
+    height: 250px; /* Set a specific height for the slider image */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: calc(100% - 20px); /* Full width on mobile */
+    margin: 5px; /* Adjust margin for smaller screens */
+    flex: 1 1 100%; /* Ensure single column layout */
+  }
+
+  .slider-image {
+    height: 200px; /* Set a specific height for the slider image */
+  }
+
+  .groceries-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Additional Fixes to Ensure No Overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure body width is 100% */
+}
+
+.products > * {
+  flex: 0 1 auto; /* Prevent items from exceeding their parent container */
+  box-sizing: border-box; /* Include padding/border in width */
+}
